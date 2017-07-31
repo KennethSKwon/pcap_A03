@@ -8,7 +8,7 @@
 #include <netinet/tcp.h>  		 // for tcp structure
 #include <arpa/inet.h>
 // copy struct information Link on End of Code. 
-//#include "_My_lib.h"
+//s#include "_pcap_func.h"
 
 
 
@@ -57,7 +57,7 @@ void _tcp_func(u_char *packet){
 
 
 
-int main(int argc, char *argv[]){
+int _pcap_func(int argc, char *argv[]){
 	printf("*START*");
 	pcap_t *handle;	
 	u_char *packet;
